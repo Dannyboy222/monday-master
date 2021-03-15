@@ -5,22 +5,27 @@ const stringLib = () =>
 
 function add(a, b) {
     // add a to b
+    return a + b;
   }
 
 function sub(a, b) {
     // sub a from b
+    return a - b;
   }
 
 function mul(a, b) {
     // mul a by b
+    return a * b;
   }
 
 function div(a, b) {
     // dib a by b
+    return a / b;
   }
 
 function Exponentiation(a, b) {
     // expont a of b
+    return Math.pow(a, b);
   }
 
 function Increment(a, b) {
