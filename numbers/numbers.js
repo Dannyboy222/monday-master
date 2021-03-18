@@ -127,49 +127,43 @@ function RandomNumberList(min, max)  //assuming start = min, end = max
 
 function RandomNumberList(start,end,count, allowDuplicates)
   {
-        // return count number of random numbers, between start and end. use allowDuplicates to choose if we should allow duplicates in the list or not
-        if(allowDuplicates) {
-          var numberList = [];
-          for(i = 0; i < 10; i++) {
+// return count number of random numbers, between start and end. use allowDuplicates to choose if we should allow duplicates in the list or not
+  if(allowDuplicates) {
+  var numberList = [];
+   for(i = 0; i < 10; i++) {
     
-            numberList.push(Math.floor(Math.random() * (max-min)) +min);
-          }
-          return numberList;
+   numberList.push(Math.floor(Math.random() * (max-min)) +min);
+   }
+  return numberList;
     
-        }else {
-          var numberList = [];
-          for(i = 0; i < 10; i++) {
+  }else {
+  var numberList = [];
+  for(i = 0; i < 10; i++) {
     
-            //generate random number and save in temporary variable
-            var tempNumber = Math.floor(Math.random() * (max-min)) +min;
-            var shouldAddNumber = true;
+  //generate random number and save in temporary variable
+  var tempNumber = Math.floor(Math.random() * (max-min)) +min;
+  var shouldAddNumber = true;
     
-            //check for duplicates
-            for(j = 0; j < numberList.length; j ++){
+  //check for duplicates
+  for(j = 0; j < numberList.length; j ++){
     
-              if(tempNumber == numberList[j]){ //if the temp number is already in the list, then DONT add
-                shouldAddNumber = false;
-                i --;
-                break;
-              }
+  if(tempNumber == numberList[j]){ //if the temp number is already in the list, then DONT add
+    shouldAddNumber = false;
+    i --;
+    break;
+  }
+  //if not duplicates, we add!
+  if(shouldAddNumber){
+   numberList.push(tempNumber);
     
-            }
-    
-            //if not duplicates, we add!
-            if(shouldAddNumber){
-              numberList.push(tempNumber);
-    
-            }
-    
-          }
+  }
+  }
     
     
     
-          //at the end of the loop, we should have "rerolled" all the number until there are no duplicates, then return 
-          return numberList;
-    
-    
-        }
+  //at the end of the loop, we should have "rerolled" all the number until there are no duplicates, then return 
+  return numberList;
+  }
     
     }
 

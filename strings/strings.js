@@ -35,15 +35,15 @@ ReverseString("hello");
 function GenerateOnlyUpperCase()
 {
 //Ie: A,B,C,D,E,F,G...Z
-var letter = a, b, c, d, e, f;
-var res = letter.toUpperCase(letter);
+var str ="lksadjflasdjfasldkfjsal"
+console.log(str.toLocaleUpperCase());
 }
 
 function GenerateOnlyLowerCase()
 {
 //Ie: a,b,c,d,e,f,g...z
 var str = "sdfsldfjslkASD324fj2123ljsdfASDFlk";
-console.log(str.replace(/[1-9]/i,""))
+console.log(str.toLowerCase());
 
 }
 
@@ -60,14 +60,17 @@ function GenerateOnlySymbols()
 var str = "sdfsldfjs@#!^#$#$%kfj2123ljsdflk";
 console.log(str.replace(/[1-9]/gi,""));
 console.log(str.replace(/[a-z]/gi,""));
-
-
 }
 
 
 function GenerateUpperAndLowerCase()
 {
     //Ie: A,B,C,D,E,F,G...Z and  a,b,c,d,e,f,g...z
+    var str ="alkdsjflkdsASDFSAlsakfjASDF";
+    console.log(str.toLocaleUpperCase());
+    console.log(str.toLowerCase());
+
+
 }
 
 }
