@@ -28,16 +28,23 @@ console.log(Number.ASCIINumberToChar("A"));
 function ReverseString(origionalString)
 {
 // return a string, ie: Hello becomes olleH
+return origionalString;
 }
+ReverseString("hello");
 
 function GenerateOnlyUpperCase()
 {
 //Ie: A,B,C,D,E,F,G...Z
+var letter = a, b, c, d, e, f;
+var res = letter.toUpperCase(letter);
 }
 
 function GenerateOnlyLowerCase()
 {
 //Ie: a,b,c,d,e,f,g...z
+var letter = A, B, C, D, E, F;
+var res = letter.toLowerCase(letter);
+
 }
 
 function GenerateOnlyNumbers()
