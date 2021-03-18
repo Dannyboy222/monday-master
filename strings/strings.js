@@ -42,8 +42,8 @@ var res = letter.toUpperCase(letter);
 function GenerateOnlyLowerCase()
 {
 //Ie: a,b,c,d,e,f,g...z
-var letter = A, B, C, D, E, F;
-var res = letter.toLowerCase(letter);
+var str = "sdfsldfjslkASD324fj2123ljsdfASDFlk";
+console.log(str.replace(/[1-9]/i,""))
 
 }
 
@@ -51,12 +51,17 @@ function GenerateOnlyNumbers()
 {
 //Ie: 0,1,2,3...9
 var str = "sdfsldfjslkfj2123ljsdflk";
-console.log(str.replace(/[1-9]/gi,""));
+console.log(str.replace(/[a-z]/gi,""));
 }
 
 function GenerateOnlySymbols()
 {
 //Ie: $, %, !, #, etc
+var str = "sdfsldfjs@#!^#$#$%kfj2123ljsdflk";
+console.log(str.replace(/[1-9]/gi,""));
+console.log(str.replace(/[a-z]/gi,""));
+
+
 }
 
 
