@@ -50,6 +50,8 @@ var res = letter.toLowerCase(letter);
 function GenerateOnlyNumbers()
 {
 //Ie: 0,1,2,3...9
+var str = "sdfsldfjslkfj2123ljsdflk";
+console.log(str.replace(/[1-9]/gi,""));
 }
 
 function GenerateOnlySymbols()
