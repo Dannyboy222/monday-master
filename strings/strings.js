@@ -7,17 +7,22 @@ const stringLib = () =>
 function concatanate(a,b)
 {
 // append one string to another
+let aResult = a;
+aResult.concatanate(b);
+return aResult;
 }
 
 
 function ASCIINumberToChar(Number)
 {
 // take one number, say, 127 and convert it to its ASCII char representation
+console.log(String.ASCIINumberToChar(127));
 }
 
 function CharToAsciiNumber(aChar)
 {
 // take one Character, say, 'A' and convert it to it's Number representation
+console.log(Number.ASCIINumberToChar("A"));
 }
 
 function ReverseString(origionalString)
